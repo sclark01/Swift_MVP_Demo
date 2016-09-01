@@ -9,7 +9,13 @@ def testing_pods
   pod 'Nimble', '~> 4.0.1'
 end
 
+def networking_pods 
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+end
+
 target 'MVP_Demo' do
+  networking_pods
 end
 
 target 'MVP_DemoTests' do

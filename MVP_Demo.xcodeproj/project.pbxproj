@@ -14,6 +14,12 @@
 		58F6F5A11D78CC1700BB598F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6F59F1D78CC1700BB598F /* LaunchScreen.storyboard */; };
 		58F6F5BE1D78D2B500BB598F /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5BD1D78D2B500BB598F /* PeopleListViewController.swift */; };
 		58F6F5C01D78D2EB00BB598F /* PeopleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6F5BF1D78D2EB00BB598F /* PeopleList.storyboard */; };
+		58F6F5C21D78D33400BB598F /* PeopleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5C11D78D33400BB598F /* PeopleListPresenter.swift */; };
+		58F6F5C41D78D38D00BB598F /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5C31D78D38C00BB598F /* PeopleListView.swift */; };
+		58F6F5C61D78D3C400BB598F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5C51D78D3C400BB598F /* Person.swift */; };
+		58F6F5CB1D78D6AB00BB598F /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5CA1D78D6AB00BB598F /* PersonTests.swift */; };
+		58F6F5CD1D78E46900BB598F /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5CC1D78E46900BB598F /* PeopleService.swift */; };
+		58F6F5CF1D78E5DC00BB598F /* PeopleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5CE1D78E5DC00BB598F /* PeopleTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,12 @@
 		58F6F5AD1D78CC1700BB598F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58F6F5BD1D78D2B500BB598F /* PeopleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
 		58F6F5BF1D78D2EB00BB598F /* PeopleList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PeopleList.storyboard; sourceTree = "<group>"; };
+		58F6F5C11D78D33400BB598F /* PeopleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenter.swift; sourceTree = "<group>"; };
+		58F6F5C31D78D38C00BB598F /* PeopleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		58F6F5C51D78D3C400BB598F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		58F6F5CA1D78D6AB00BB598F /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		58F6F5CC1D78E46900BB598F /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		58F6F5CE1D78E5DC00BB598F /* PeopleTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTransformer.swift; sourceTree = "<group>"; };
 		75EA2CC0D1543D774CED5946 /* Pods-MVP_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVP_Demo/Pods-MVP_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7608C071FAD7328583B0A8 /* Pods-MVP_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP_Demo/Pods-MVP_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B3B508FEFC976162271D94FE /* Pods_MVP_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +122,9 @@
 		58F6F5AA1D78CC1700BB598F /* MVP_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F6F5C91D78D66000BB598F /* ModelTests */,
+				58F6F5C81D78D65900BB598F /* PeopleListTests */,
+				58F6F5C71D78D64E00BB598F /* ServiceTests */,
 				58F6F5AD1D78CC1700BB598F /* Info.plist */,
 			);
 			path = MVP_DemoTests;
@@ -118,6 +133,7 @@
 		58F6F5B81D78D1AE00BB598F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				58F6F5C51D78D3C400BB598F /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +143,8 @@
 			children = (
 				58F6F5BF1D78D2EB00BB598F /* PeopleList.storyboard */,
 				58F6F5BD1D78D2B500BB598F /* PeopleListViewController.swift */,
+				58F6F5C11D78D33400BB598F /* PeopleListPresenter.swift */,
+				58F6F5C31D78D38C00BB598F /* PeopleListView.swift */,
 			);
 			path = PeopleList;
 			sourceTree = "<group>";
@@ -134,8 +152,32 @@
 		58F6F5BC1D78D25B00BB598F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				58F6F5CC1D78E46900BB598F /* PeopleService.swift */,
+				58F6F5CE1D78E5DC00BB598F /* PeopleTransformer.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		58F6F5C71D78D64E00BB598F /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		58F6F5C81D78D65900BB598F /* PeopleListTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PeopleListTests;
+			sourceTree = "<group>";
+		};
+		58F6F5C91D78D66000BB598F /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F6F5CA1D78D6AB00BB598F /* PersonTests.swift */,
+			);
+			path = ModelTests;
 			sourceTree = "<group>";
 		};
 		E16F07044B5352CF8B12F383 /* Pods */ = {
@@ -350,8 +392,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F6F5C61D78D3C400BB598F /* Person.swift in Sources */,
+				58F6F5C21D78D33400BB598F /* PeopleListPresenter.swift in Sources */,
+				58F6F5CD1D78E46900BB598F /* PeopleService.swift in Sources */,
 				58F6F5BE1D78D2B500BB598F /* PeopleListViewController.swift in Sources */,
 				58F6F5971D78CC1700BB598F /* AppDelegate.swift in Sources */,
+				58F6F5C41D78D38D00BB598F /* PeopleListView.swift in Sources */,
+				58F6F5CF1D78E5DC00BB598F /* PeopleTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F6F5CB1D78D6AB00BB598F /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,10 +548,12 @@
 			baseConfigurationReference = F5F7B506A0F4050851ECA5F2 /* Pods-MVP_DemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MVP_DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.MVP-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVP_Demo.app/MVP_Demo";
 			};
 			name = Debug;
@@ -513,6 +563,7 @@
 			baseConfigurationReference = DE3CFB1B903A20C8F1D24375 /* Pods-MVP_DemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MVP_DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.MVP-DemoTests";
