@@ -3,7 +3,7 @@ import UIKit
 class PeopleListViewController: UIViewController {
 
     private var peoplePresenter: PeopleListPresenterType!
-    private var people: [Person] = []
+    private var people: [PersonViewModel] = []
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -15,7 +15,7 @@ class PeopleListViewController: UIViewController {
 
 extension PeopleListViewController : PeopleListView {
 
-    func set(people people: [Person]) {
+    func set(people people: [PersonViewModel]) {
         self.people = people
         tableView.reloadData()
     }
@@ -40,6 +40,5 @@ extension PeopleListViewController : UITableViewDataSource {
 
         return cell
     }
-    
 }
 

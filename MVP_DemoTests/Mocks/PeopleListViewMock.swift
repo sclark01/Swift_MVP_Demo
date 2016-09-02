@@ -3,9 +3,9 @@ import Foundation
 @testable import MVP_Demo
 
 class MockPeopleListView : PeopleListView {
-    var didSetWithPeople: [Person]? = nil
+    var didSetWithPeople: [PersonViewModel]? = nil
 
-    func set(people people: [Person]) {
+    func set(people people: [PersonViewModel]) {
         didSetWithPeople = people
     }
 }

@@ -25,6 +25,8 @@
 		58F6F5D51D78F7AB00BB598F /* PeopleListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D41D78F7AB00BB598F /* PeopleListPresenterTests.swift */; };
 		58F6F5D81D78F81B00BB598F /* PeopleListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D71D78F81B00BB598F /* PeopleListViewMock.swift */; };
 		58F6F5DA1D78F90B00BB598F /* PeopleServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D91D78F90B00BB598F /* PeopleServiceMock.swift */; };
+		58F6F5DC1D79F48800BB598F /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5DB1D79F48800BB598F /* PersonViewModel.swift */; };
+		58F6F5DE1D79F72A00BB598F /* PersonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5DD1D79F72A00BB598F /* PersonViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		58F6F5D41D78F7AB00BB598F /* PeopleListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenterTests.swift; sourceTree = "<group>"; };
 		58F6F5D71D78F81B00BB598F /* PeopleListViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewMock.swift; sourceTree = "<group>"; };
 		58F6F5D91D78F90B00BB598F /* PeopleServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceMock.swift; sourceTree = "<group>"; };
+		58F6F5DB1D79F48800BB598F /* PersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		58F6F5DD1D79F72A00BB598F /* PersonViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewModelTests.swift; sourceTree = "<group>"; };
 		75EA2CC0D1543D774CED5946 /* Pods-MVP_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVP_Demo/Pods-MVP_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7608C071FAD7328583B0A8 /* Pods-MVP_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP_Demo/Pods-MVP_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B3B508FEFC976162271D94FE /* Pods_MVP_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,7 @@
 				58F6F5BD1D78D2B500BB598F /* PeopleListViewController.swift */,
 				58F6F5C11D78D33400BB598F /* PeopleListPresenter.swift */,
 				58F6F5C31D78D38C00BB598F /* PeopleListView.swift */,
+				58F6F5DB1D79F48800BB598F /* PersonViewModel.swift */,
 			);
 			path = PeopleList;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				58F6F5D41D78F7AB00BB598F /* PeopleListPresenterTests.swift */,
+				58F6F5DD1D79F72A00BB598F /* PersonViewModelTests.swift */,
 			);
 			path = PeopleListTests;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 				58F6F5C61D78D3C400BB598F /* Person.swift in Sources */,
 				58F6F5C21D78D33400BB598F /* PeopleListPresenter.swift in Sources */,
 				58F6F5CD1D78E46900BB598F /* PeopleService.swift in Sources */,
+				58F6F5DC1D79F48800BB598F /* PersonViewModel.swift in Sources */,
 				58F6F5BE1D78D2B500BB598F /* PeopleListViewController.swift in Sources */,
 				58F6F5971D78CC1700BB598F /* AppDelegate.swift in Sources */,
 				58F6F5C41D78D38D00BB598F /* PeopleListView.swift in Sources */,
@@ -432,6 +439,7 @@
 				58F6F5D81D78F81B00BB598F /* PeopleListViewMock.swift in Sources */,
 				58F6F5D31D78F60400BB598F /* PeopleTransformerTests.swift in Sources */,
 				58F6F5DA1D78F90B00BB598F /* PeopleServiceMock.swift in Sources */,
+				58F6F5DE1D79F72A00BB598F /* PersonViewModelTests.swift in Sources */,
 				58F6F5D51D78F7AB00BB598F /* PeopleListPresenterTests.swift in Sources */,
 				58F6F5D11D78F25300BB598F /* PeopleServiceTests.swift in Sources */,
 				58F6F5CB1D78D6AB00BB598F /* PersonTests.swift in Sources */,
