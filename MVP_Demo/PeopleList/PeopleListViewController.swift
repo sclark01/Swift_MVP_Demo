@@ -19,7 +19,6 @@ extension PeopleListViewController : PeopleListView {
         self.people = people
         tableView.reloadData()
     }
-
 }
 
 extension PeopleListViewController : UITableViewDataSource {
@@ -41,5 +40,6 @@ extension PeopleListViewController : UITableViewDataSource {
 
         return cell
     }
+    
 }
 

@@ -20,6 +20,11 @@
 		58F6F5CB1D78D6AB00BB598F /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5CA1D78D6AB00BB598F /* PersonTests.swift */; };
 		58F6F5CD1D78E46900BB598F /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5CC1D78E46900BB598F /* PeopleService.swift */; };
 		58F6F5CF1D78E5DC00BB598F /* PeopleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5CE1D78E5DC00BB598F /* PeopleTransformer.swift */; };
+		58F6F5D11D78F25300BB598F /* PeopleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D01D78F25300BB598F /* PeopleServiceTests.swift */; };
+		58F6F5D31D78F60400BB598F /* PeopleTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D21D78F60400BB598F /* PeopleTransformerTests.swift */; };
+		58F6F5D51D78F7AB00BB598F /* PeopleListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D41D78F7AB00BB598F /* PeopleListPresenterTests.swift */; };
+		58F6F5D81D78F81B00BB598F /* PeopleListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D71D78F81B00BB598F /* PeopleListViewMock.swift */; };
+		58F6F5DA1D78F90B00BB598F /* PeopleServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5D91D78F90B00BB598F /* PeopleServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		58F6F5CA1D78D6AB00BB598F /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		58F6F5CC1D78E46900BB598F /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 		58F6F5CE1D78E5DC00BB598F /* PeopleTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTransformer.swift; sourceTree = "<group>"; };
+		58F6F5D01D78F25300BB598F /* PeopleServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceTests.swift; sourceTree = "<group>"; };
+		58F6F5D21D78F60400BB598F /* PeopleTransformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTransformerTests.swift; sourceTree = "<group>"; };
+		58F6F5D41D78F7AB00BB598F /* PeopleListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenterTests.swift; sourceTree = "<group>"; };
+		58F6F5D71D78F81B00BB598F /* PeopleListViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewMock.swift; sourceTree = "<group>"; };
+		58F6F5D91D78F90B00BB598F /* PeopleServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceMock.swift; sourceTree = "<group>"; };
 		75EA2CC0D1543D774CED5946 /* Pods-MVP_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVP_Demo/Pods-MVP_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7608C071FAD7328583B0A8 /* Pods-MVP_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP_Demo/Pods-MVP_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		B3B508FEFC976162271D94FE /* Pods_MVP_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +132,7 @@
 		58F6F5AA1D78CC1700BB598F /* MVP_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F6F5D61D78F7F700BB598F /* Mocks */,
 				58F6F5C91D78D66000BB598F /* ModelTests */,
 				58F6F5C81D78D65900BB598F /* PeopleListTests */,
 				58F6F5C71D78D64E00BB598F /* ServiceTests */,
@@ -161,6 +172,8 @@
 		58F6F5C71D78D64E00BB598F /* ServiceTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F6F5D01D78F25300BB598F /* PeopleServiceTests.swift */,
+				58F6F5D21D78F60400BB598F /* PeopleTransformerTests.swift */,
 			);
 			path = ServiceTests;
 			sourceTree = "<group>";
@@ -168,6 +181,7 @@
 		58F6F5C81D78D65900BB598F /* PeopleListTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F6F5D41D78F7AB00BB598F /* PeopleListPresenterTests.swift */,
 			);
 			path = PeopleListTests;
 			sourceTree = "<group>";
@@ -178,6 +192,15 @@
 				58F6F5CA1D78D6AB00BB598F /* PersonTests.swift */,
 			);
 			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		58F6F5D61D78F7F700BB598F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				58F6F5D71D78F81B00BB598F /* PeopleListViewMock.swift */,
+				58F6F5D91D78F90B00BB598F /* PeopleServiceMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		E16F07044B5352CF8B12F383 /* Pods */ = {
@@ -406,6 +429,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F6F5D81D78F81B00BB598F /* PeopleListViewMock.swift in Sources */,
+				58F6F5D31D78F60400BB598F /* PeopleTransformerTests.swift in Sources */,
+				58F6F5DA1D78F90B00BB598F /* PeopleServiceMock.swift in Sources */,
+				58F6F5D51D78F7AB00BB598F /* PeopleListPresenterTests.swift in Sources */,
+				58F6F5D11D78F25300BB598F /* PeopleServiceTests.swift in Sources */,
 				58F6F5CB1D78D6AB00BB598F /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

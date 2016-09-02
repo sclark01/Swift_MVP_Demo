@@ -7,12 +7,15 @@ use_frameworks!
 def testing_pods
   pod 'Quick', '~> 0.9.2'
   pod 'Nimble', '~> 4.0.1'
+  pod 'OHHTTPStubs'
+  pod 'OHHTTPStubs/Swift'
 end
 
 def networking_pods 
   pod 'Alamofire'
-  pod 'SwiftyJSON'
 end
+
+pod 'SwiftyJSON'
 
 target 'MVP_Demo' do
   networking_pods
