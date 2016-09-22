@@ -18,7 +18,7 @@ class PeopleListPresenter : PeopleListPresenterType {
     func getUsers() {
         peopleService.getPeople { [weak self] people in
             let peopleForView = people.map {
-                PersonViewModel(person: $0)
+                PersonForListViewModel(person: $0)
             }
             self?.view.set(people: peopleForView)
         }

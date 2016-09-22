@@ -1,5 +1,5 @@
 import Foundation
 
 protocol PersonDetailsView {
-    func display(person person: PersonViewModel)
+    func display(person person: PersonForListViewModel)
 }

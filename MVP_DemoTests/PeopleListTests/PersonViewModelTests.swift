@@ -14,7 +14,7 @@ class PersonViewModelTests : QuickSpec {
                 let id = 0
                 let person = Person(id: id, name: name, phone: phone, age: age)
  
-                let personViewModel = PersonViewModel(person: person)
+                let personViewModel = PersonForListViewModel(person: person)
 
                 let expectedPhone = "Phone: \(phone)"
 
@@ -28,8 +28,8 @@ class PersonViewModelTests : QuickSpec {
             it("should show VM as equal when two people are the same") {
                 let person1 = Person(id: 0, name: "someName", phone: "somePhone", age: "someAge")
 
-                let personVM1 = PersonViewModel(person: person1)
-                let personVM2 = PersonViewModel(person: person1)
+                let personVM1 = PersonForListViewModel(person: person1)
+                let personVM2 = PersonForListViewModel(person: person1)
 
                 expect(person1) == person1
                 expect(personVM1) == personVM2
@@ -39,8 +39,8 @@ class PersonViewModelTests : QuickSpec {
                 let person1 = Person(id: 0, name: "someName", phone: "somePhone", age: "someAge")
                 let person2 = Person(id: 1, name: "differentName", phone: "differentPhone", age: "someAge")
 
-                let personVM1 = PersonViewModel(person: person1)
-                let personVM2 = PersonViewModel(person: person2)
+                let personVM1 = PersonForListViewModel(person: person1)
+                let personVM2 = PersonForListViewModel(person: person2)
 
                 expect(person1) != person2
                 expect(personVM1) != personVM2

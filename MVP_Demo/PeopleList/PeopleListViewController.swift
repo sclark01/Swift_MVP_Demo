@@ -3,7 +3,7 @@ import UIKit
 class PeopleListViewController: UIViewController {
 
     internal var peoplePresenter: PeopleListPresenterType!
-    private var people: [PersonViewModel] = []
+    private var people: [PersonForListViewModel] = []
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -27,7 +27,7 @@ class PeopleListViewController: UIViewController {
 }
 
 extension PeopleListViewController : PeopleListView {
-    func set(people people: [PersonViewModel]) {
+    func set(people people: [PersonForListViewModel]) {
         self.people = people
         tableView.reloadData()
     }

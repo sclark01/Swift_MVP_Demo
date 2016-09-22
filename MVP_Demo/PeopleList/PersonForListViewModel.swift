@@ -1,6 +1,6 @@
 import Foundation
 
-struct PersonViewModel {
+struct PersonForListViewModel {
     private let person: Person
 
     init(person: Person) {
@@ -20,8 +20,8 @@ struct PersonViewModel {
     }
 }
 
-extension PersonViewModel : Equatable {}
+extension PersonForListViewModel : Equatable {}
 
-func ==(lhs: PersonViewModel, rhs: PersonViewModel) -> Bool {
+func ==(lhs: PersonForListViewModel, rhs: PersonForListViewModel) -> Bool {
     return lhs.person == rhs.person
 }

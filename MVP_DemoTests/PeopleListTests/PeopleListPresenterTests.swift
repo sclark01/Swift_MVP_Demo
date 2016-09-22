@@ -11,7 +11,7 @@ class PeopleListPresenterTests : QuickSpec {
         var mockPeopleListView: PeopleListViewMock!
 
         let people = [Person(id: 0, name: "someName", phone: "somePhone", age: "someAge")]
-        let expectedPeople = [PersonViewModel(person: people.first!)]
+        let expectedPeople = [PersonForListViewModel(person: people.first!)]
 
         beforeEach {
             mockPeopleService = PeopleServiceMock()

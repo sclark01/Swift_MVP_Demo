@@ -10,7 +10,7 @@ class PeopleListViewControllerTests : QuickSpec {
             var viewController: PeopleListViewController!
             var mockPresenter: PeopleListPresenterMock!
 
-            let personModel = PersonViewModel(person: Person(id: 1, name: "someName", phone: "somePhone", age: "someAge"))
+            let personModel = PersonForListViewModel(person: Person(id: 1, name: "someName", phone: "somePhone", age: "someAge"))
 
             beforeEach {
                 let storyboard = UIStoryboard(name: "PeopleList", bundle: nil)

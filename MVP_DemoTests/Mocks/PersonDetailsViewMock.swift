@@ -3,7 +3,10 @@ import Foundation
 @testable import MVP_Demo
 
 class PersonDetailsViewMock : PersonDetailsView {
-    func display(person person: PersonViewModel) {
-        
+
+    var didDisplayWithPersonViewModel: PersonForListViewModel!
+
+    func display(person person: PersonForListViewModel) {
+        didDisplayWithPersonViewModel = person
     }
 }

@@ -8,7 +8,7 @@ class PeopleListPresenterMock : PeopleListPresenterType {
     let view: PeopleListView
     let service: PeopleServiceType
 
-    var willSetWithUsers: [PersonViewModel]!
+    var willSetWithUsers: [PersonForListViewModel]!
 
     required init(view: PeopleListView, peopleService: PeopleServiceType) {
         self.view = view

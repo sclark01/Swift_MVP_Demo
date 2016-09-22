@@ -16,7 +16,7 @@ class PersonDetailsViewController : UIViewController {
 }
 
 extension PersonDetailsViewController : PersonDetailsView {
-    func display(person person: PersonViewModel) {
+    func display(person person: PersonForListViewModel) {
 
     }
 }
