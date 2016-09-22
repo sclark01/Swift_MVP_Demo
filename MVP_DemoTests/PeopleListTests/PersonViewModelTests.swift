@@ -7,10 +7,12 @@ import Nimble
 class PersonViewModelTests : QuickSpec {
     override func spec() {
         describe("person view model") {
-            it("should return name as string and phone labeled with 'phone: '") {
+            it("should return name as string and phone labeled with 'phone: ', and id as int") {
                 let name = "someName"
                 let phone = "somePhone"
-                let person = Person(id: 0, name: name, phone: phone)
+                let age = "someAge"
+                let id = 0
+                let person = Person(id: id, name: name, phone: phone, age: age)
  
                 let personViewModel = PersonViewModel(person: person)
 
@@ -18,12 +20,13 @@ class PersonViewModelTests : QuickSpec {
 
                 expect(personViewModel.name) == name
                 expect(personViewModel.phone) == expectedPhone
+                expect(personViewModel.id) == id
             }
         }
 
         describe("equality") {
             it("should show VM as equal when two people are the same") {
-                let person1 = Person(id: 0, name: "someName", phone: "somePhone")
+                let person1 = Person(id: 0, name: "someName", phone: "somePhone", age: "someAge")
 
                 let personVM1 = PersonViewModel(person: person1)
                 let personVM2 = PersonViewModel(person: person1)
@@ -33,8 +36,8 @@ class PersonViewModelTests : QuickSpec {
             }
 
             it("should show VM as equal when two people are not the same") {
-                let person1 = Person(id: 0, name: "someName", phone: "somePhone")
-                let person2 = Person(id: 1, name: "differentName", phone: "differentPhone")
+                let person1 = Person(id: 0, name: "someName", phone: "somePhone", age: "someAge")
+                let person2 = Person(id: 1, name: "differentName", phone: "differentPhone", age: "someAge")
 
                 let personVM1 = PersonViewModel(person: person1)
                 let personVM2 = PersonViewModel(person: person2)

@@ -2,19 +2,31 @@ import UIKit
 
 class PeopleListViewController: UIViewController {
 
-    private var peoplePresenter: PeopleListPresenterType!
+    internal var peoplePresenter: PeopleListPresenterType!
     private var people: [PersonViewModel] = []
 
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
-        peoplePresenter = PeopleListPresenter(view: self, peopleService: PeopleService())
+        if peoplePresenter == nil {
+            peoplePresenter = PeopleListPresenter(view: self, peopleService: PeopleService())
+        }
         peoplePresenter.getUsers()
+    }
+
+    func transitionToPeopleDetailsView(withId id: Int) {
+        let storyBoard = UIStoryboard(name: "PersonDetails", bundle: nil)
+        guard let viewController = storyBoard.instantiateInitialViewController() as? PersonDetailsViewController else { return }
+        viewController.personId = id
+        transitionTo(viewController: viewController)
+    }
+
+    internal func transitionTo(viewController vc: UIViewController) {
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension PeopleListViewController : PeopleListView {
-
     func set(people people: [PersonViewModel]) {
         self.people = people
         tableView.reloadData()
@@ -39,6 +51,14 @@ extension PeopleListViewController : UITableViewDataSource {
         cell.detailTextLabel?.text = person.phone
 
         return cell
+    }
+}
+
+extension PeopleListViewController : UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let personModel = people[indexPath.row]
+        transitionToPeopleDetailsView(withId: personModel.id)
     }
 }
 

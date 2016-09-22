@@ -18,6 +18,17 @@
 		585493891D7D96E3009D68BE /* PersonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585493871D7D96E3009D68BE /* PersonViewModelTests.swift */; };
 		5854938C1D7D96EF009D68BE /* PeopleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854938A1D7D96EF009D68BE /* PeopleServiceTests.swift */; };
 		5854938D1D7D96EF009D68BE /* PeopleTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5854938B1D7D96EF009D68BE /* PeopleTransformerTests.swift */; };
+		5874F8491D947F9B00A43547 /* PersonDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5874F8481D947F9B00A43547 /* PersonDetails.storyboard */; };
+		5874F84B1D947FB400A43547 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F84A1D947FB400A43547 /* PersonDetailsViewController.swift */; };
+		5874F84D1D94800500A43547 /* PeopleListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F84C1D94800500A43547 /* PeopleListViewControllerTests.swift */; };
+		5874F84F1D9480A500A43547 /* PeopleListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F84E1D9480A500A43547 /* PeopleListPresenterMock.swift */; };
+		5874F8511D948C7100A43547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5874F8501D948C7100A43547 /* Main.storyboard */; };
+		5874F8541D948FDA00A43547 /* PersonDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F8531D948FDA00A43547 /* PersonDetailsViewControllerTests.swift */; };
+		5874F8561D94905100A43547 /* PersonDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F8551D94905100A43547 /* PersonDetailsPresenter.swift */; };
+		5874F8581D9490D400A43547 /* PersonDetailsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F8571D9490D400A43547 /* PersonDetailsPresenterMock.swift */; };
+		5874F85A1D94936400A43547 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F8591D94936400A43547 /* PersonDetailsView.swift */; };
+		5874F85C1D9493FD00A43547 /* PersonDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F85B1D9493FD00A43547 /* PersonDetailsPresenterTests.swift */; };
+		5874F85E1D94958A00A43547 /* PersonDetailsViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F85D1D94958A00A43547 /* PersonDetailsViewMock.swift */; };
 		58F6F5971D78CC1700BB598F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5961D78CC1700BB598F /* AppDelegate.swift */; };
 		58F6F59E1D78CC1700BB598F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F6F59D1D78CC1700BB598F /* Assets.xcassets */; };
 		58F6F5A11D78CC1700BB598F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6F59F1D78CC1700BB598F /* LaunchScreen.storyboard */; };
@@ -50,6 +61,17 @@
 		585493871D7D96E3009D68BE /* PersonViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewModelTests.swift; sourceTree = "<group>"; };
 		5854938A1D7D96EF009D68BE /* PeopleServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceTests.swift; sourceTree = "<group>"; };
 		5854938B1D7D96EF009D68BE /* PeopleTransformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTransformerTests.swift; sourceTree = "<group>"; };
+		5874F8481D947F9B00A43547 /* PersonDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PersonDetails.storyboard; sourceTree = "<group>"; };
+		5874F84A1D947FB400A43547 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		5874F84C1D94800500A43547 /* PeopleListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewControllerTests.swift; sourceTree = "<group>"; };
+		5874F84E1D9480A500A43547 /* PeopleListPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenterMock.swift; sourceTree = "<group>"; };
+		5874F8501D948C7100A43547 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5874F8531D948FDA00A43547 /* PersonDetailsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		5874F8551D94905100A43547 /* PersonDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsPresenter.swift; sourceTree = "<group>"; };
+		5874F8571D9490D400A43547 /* PersonDetailsPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsPresenterMock.swift; sourceTree = "<group>"; };
+		5874F8591D94936400A43547 /* PersonDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
+		5874F85B1D9493FD00A43547 /* PersonDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		5874F85D1D94958A00A43547 /* PersonDetailsViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewMock.swift; sourceTree = "<group>"; };
 		58F6F5931D78CC1700BB598F /* MVP_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F6F5961D78CC1700BB598F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F6F59D1D78CC1700BB598F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +121,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5874F8471D947F0100A43547 /* PersonDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5874F8481D947F9B00A43547 /* PersonDetails.storyboard */,
+				5874F84A1D947FB400A43547 /* PersonDetailsViewController.swift */,
+				5874F8551D94905100A43547 /* PersonDetailsPresenter.swift */,
+				5874F8591D94936400A43547 /* PersonDetailsView.swift */,
+			);
+			path = PersonDetails;
+			sourceTree = "<group>";
+		};
+		5874F8521D948FB200A43547 /* PersonDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5874F8531D948FDA00A43547 /* PersonDetailsViewControllerTests.swift */,
+				5874F85B1D9493FD00A43547 /* PersonDetailsPresenterTests.swift */,
+			);
+			path = PersonDetailsTests;
+			sourceTree = "<group>";
+		};
 		58F6F58A1D78CC1700BB598F = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +164,7 @@
 		58F6F5951D78CC1700BB598F /* MVP_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5874F8471D947F0100A43547 /* PersonDetails */,
 				58F6F5BC1D78D25B00BB598F /* Services */,
 				58F6F5BB1D78D22F00BB598F /* PeopleList */,
 				58F6F5B81D78D1AE00BB598F /* Models */,
@@ -129,6 +172,7 @@
 				58F6F59D1D78CC1700BB598F /* Assets.xcassets */,
 				58F6F59F1D78CC1700BB598F /* LaunchScreen.storyboard */,
 				58F6F5A21D78CC1700BB598F /* Info.plist */,
+				5874F8501D948C7100A43547 /* Main.storyboard */,
 			);
 			path = MVP_Demo;
 			sourceTree = "<group>";
@@ -136,6 +180,7 @@
 		58F6F5AA1D78CC1700BB598F /* MVP_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				5874F8521D948FB200A43547 /* PersonDetailsTests */,
 				58F6F5D61D78F7F700BB598F /* Mocks */,
 				58F6F5C91D78D66000BB598F /* ModelTests */,
 				58F6F5C81D78D65900BB598F /* PeopleListTests */,
@@ -188,6 +233,7 @@
 			children = (
 				585493861D7D96E3009D68BE /* PeopleListPresenterTests.swift */,
 				585493871D7D96E3009D68BE /* PersonViewModelTests.swift */,
+				5874F84C1D94800500A43547 /* PeopleListViewControllerTests.swift */,
 			);
 			path = PeopleListTests;
 			sourceTree = "<group>";
@@ -205,6 +251,9 @@
 			children = (
 				585493801D7D96D0009D68BE /* PeopleListViewMock.swift */,
 				585493811D7D96D0009D68BE /* PeopleServiceMock.swift */,
+				5874F84E1D9480A500A43547 /* PeopleListPresenterMock.swift */,
+				5874F8571D9490D400A43547 /* PersonDetailsPresenterMock.swift */,
+				5874F85D1D94958A00A43547 /* PersonDetailsViewMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -308,6 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5874F8491D947F9B00A43547 /* PersonDetails.storyboard in Resources */,
+				5874F8511D948C7100A43547 /* Main.storyboard in Resources */,
 				58F6F5C01D78D2EB00BB598F /* PeopleList.storyboard in Resources */,
 				58F6F5A11D78CC1700BB598F /* LaunchScreen.storyboard in Resources */,
 				58F6F59E1D78CC1700BB598F /* Assets.xcassets in Resources */,
@@ -426,6 +477,9 @@
 				5854937F1D7D96C1009D68BE /* PeopleTransformer.swift in Sources */,
 				58F6F5DC1D79F48800BB598F /* PersonViewModel.swift in Sources */,
 				58F6F5BE1D78D2B500BB598F /* PeopleListViewController.swift in Sources */,
+				5874F84B1D947FB400A43547 /* PersonDetailsViewController.swift in Sources */,
+				5874F8561D94905100A43547 /* PersonDetailsPresenter.swift in Sources */,
+				5874F85A1D94936400A43547 /* PersonDetailsView.swift in Sources */,
 				58F6F5971D78CC1700BB598F /* AppDelegate.swift in Sources */,
 				58F6F5C41D78D38D00BB598F /* PeopleListView.swift in Sources */,
 				5854937E1D7D96C1009D68BE /* PeopleService.swift in Sources */,
@@ -436,11 +490,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5874F8541D948FDA00A43547 /* PersonDetailsViewControllerTests.swift in Sources */,
 				585493821D7D96D0009D68BE /* PeopleListViewMock.swift in Sources */,
+				5874F84F1D9480A500A43547 /* PeopleListPresenterMock.swift in Sources */,
+				5874F84D1D94800500A43547 /* PeopleListViewControllerTests.swift in Sources */,
+				5874F85C1D9493FD00A43547 /* PersonDetailsPresenterTests.swift in Sources */,
 				585493891D7D96E3009D68BE /* PersonViewModelTests.swift in Sources */,
+				5874F8581D9490D400A43547 /* PersonDetailsPresenterMock.swift in Sources */,
 				5854938C1D7D96EF009D68BE /* PeopleServiceTests.swift in Sources */,
 				585493881D7D96E3009D68BE /* PeopleListPresenterTests.swift in Sources */,
 				5854938D1D7D96EF009D68BE /* PeopleTransformerTests.swift in Sources */,
+				5874F85E1D94958A00A43547 /* PersonDetailsViewMock.swift in Sources */,
 				585493851D7D96D8009D68BE /* PersonTests.swift in Sources */,
 				585493831D7D96D0009D68BE /* PeopleServiceMock.swift in Sources */,
 			);

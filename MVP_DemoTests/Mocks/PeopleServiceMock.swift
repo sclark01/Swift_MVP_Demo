@@ -2,18 +2,25 @@ import Foundation
 
 @testable import MVP_Demo
 
-class MockPeopleService : PeopleServiceType {
+class PeopleServiceMock : PeopleServiceType {
+    var getPersonByIdCallWithId: Int?
 
+    var returnWithPerson: Person?
     var getPeopleCalled = false
 
-    private var people: [Person] = []
+    private var mockPeople: [Person]!
+
+    func withMock(people: [Person]) {
+        mockPeople = people
+    }
 
     func getPeople(onCompletion: ([Person]) -> Void) {
         getPeopleCalled = true
-        onCompletion(people)
+        onCompletion(mockPeople)
     }
 
-    func withMock(people people: [Person]) {
-        self.people = people
+    func getPersonByID(withID id: Int, onCompletion: (Person) -> Void) {
+        getPersonByIdCallWithId = id
+        onCompletion(returnWithPerson!)
     }
 }

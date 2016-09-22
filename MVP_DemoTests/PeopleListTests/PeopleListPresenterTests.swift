@@ -7,17 +7,17 @@ import Nimble
 class PeopleListPresenterTests : QuickSpec {
     override func spec() {
         var peopleListPresenter: PeopleListPresenter!
-        var mockPeopleService: MockPeopleService!
-        var mockPeopleListView: MockPeopleListView!
+        var mockPeopleService: PeopleServiceMock!
+        var mockPeopleListView: PeopleListViewMock!
 
-        let people = [Person(id: 0, name: "someName", phone: "somePhone")]
+        let people = [Person(id: 0, name: "someName", phone: "somePhone", age: "someAge")]
         let expectedPeople = [PersonViewModel(person: people.first!)]
 
         beforeEach {
-            mockPeopleService = MockPeopleService()
-            mockPeopleService.withMock(people: people)
+            mockPeopleService = PeopleServiceMock()
+            mockPeopleService.withMock(people)
 
-            mockPeopleListView = MockPeopleListView()
+            mockPeopleListView = PeopleListViewMock()
 
             peopleListPresenter = PeopleListPresenter(view: mockPeopleListView, peopleService: mockPeopleService)
         }

@@ -2,7 +2,7 @@ import Foundation
 
 @testable import MVP_Demo
 
-class MockPeopleListView : PeopleListView {
+class PeopleListViewMock : PeopleListView {
     var didSetWithPeople: [PersonViewModel]? = nil
 
     func set(people people: [PersonViewModel]) {

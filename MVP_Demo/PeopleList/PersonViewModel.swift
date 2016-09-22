@@ -14,6 +14,10 @@ struct PersonViewModel {
     var phone: String {
         return "Phone: \(person.phone)"
     }
+
+    var id: Int {
+        return person.id
+    }
 }
 
 extension PersonViewModel : Equatable {}
