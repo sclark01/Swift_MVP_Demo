@@ -7,8 +7,8 @@ protocol PeopleListPresenterType {
 
 class PeopleListPresenter : PeopleListPresenterType {
 
-    private let peopleService: PeopleServiceType
-    private let view: PeopleListView
+    fileprivate let peopleService: PeopleServiceType
+    fileprivate let view: PeopleListView
 
     required init(view: PeopleListView, peopleService: PeopleServiceType) {
         self.peopleService = peopleService

@@ -3,7 +3,7 @@ import UIKit
 class PeopleListViewController: UIViewController {
 
     internal var peoplePresenter: PeopleListPresenterType!
-    private var people: [PersonForListViewModel] = []
+    fileprivate var people: [PersonForListViewModel] = []
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -27,26 +27,26 @@ class PeopleListViewController: UIViewController {
 }
 
 extension PeopleListViewController : PeopleListView {
-    func set(people people: [PersonForListViewModel]) {
+    func set(people: [PersonForListViewModel]) {
         self.people = people
         tableView.reloadData()
     }
 }
 
 extension PeopleListViewController : UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return people.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "person"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) ?? UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
 
-        let person = people[indexPath.row]
+        let person = people[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = person.name
         cell.detailTextLabel?.text = person.phone
 
@@ -55,9 +55,9 @@ extension PeopleListViewController : UITableViewDataSource {
 }
 
 extension PeopleListViewController : UITableViewDelegate {
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let personModel = people[indexPath.row]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let personModel = people[(indexPath as NSIndexPath).row]
         transitionToPeopleDetailsView(withId: personModel.id)
     }
 }

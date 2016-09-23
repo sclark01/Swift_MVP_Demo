@@ -1,5 +1,5 @@
 import Foundation
 
 protocol PeopleListView : class {
-    func set(people people: [PersonForListViewModel])
+    func set(people: [PersonForListViewModel])
 }

@@ -26,7 +26,7 @@ class PeopleListViewControllerTests : QuickSpec {
             }
 
             it("should have a table view with one section") {
-                let sections = viewController.numberOfSectionsInTableView(viewController.tableView)
+                let sections = viewController.numberOfSections(in: viewController.tableView)
                 expect(sections) == 1
             }
 
@@ -36,7 +36,7 @@ class PeopleListViewControllerTests : QuickSpec {
             }
 
             it("should set the correct labels") {
-                let cell = viewController.tableView(viewController.tableView, cellForRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0))
+                let cell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
 
                 expect(cell.textLabel?.text) == personModel.name
                 expect(cell.detailTextLabel?.text) == personModel.phone
@@ -53,7 +53,7 @@ class PeopleListViewControllerTests : QuickSpec {
             it("should push the correct VC") {
                 viewController.transitionToPeopleDetailsView(withId: 0)
 
-                expect(viewController.didTransitionWithViewController).to(beAKindOf(PersonDetailsViewController))
+                expect(viewController.didTransitionWithViewController).to(beAKindOf(PersonDetailsViewController.self))
             }
 
             it("should add the correct id to the person details view controller") {

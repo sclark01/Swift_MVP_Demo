@@ -14,7 +14,7 @@ class PersonDetailsPresenterMock : PersonDetailsPresenterType {
 
     var didGetPersonWithId: Int?
 
-    func getPersonWith(id id: Int) {
+    func getPersonWith(id: Int) {
         didGetPersonWithId = id
         view.display(person: mockViewModel)
     }

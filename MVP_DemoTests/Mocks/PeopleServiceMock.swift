@@ -8,18 +8,18 @@ class PeopleServiceMock : PeopleServiceType {
     var returnWithPerson: Person?
     var getPeopleCalled = false
 
-    private var mockPeople: [Person]!
+    fileprivate var mockPeople: [Person]!
 
-    func withMock(people: [Person]) {
+    func withMock(_ people: [Person]) {
         mockPeople = people
     }
 
-    func getPeople(onCompletion: ([Person]) -> Void) {
+    func getPeople(_ onCompletion: @escaping ([Person]) -> Void) {
         getPeopleCalled = true
         onCompletion(mockPeople)
     }
 
-    func getPersonByID(withID id: Int, onCompletion: (Person) -> Void) {
+    func getPersonByID(withID id: Int, onCompletion: @escaping (Person) -> Void) {
         getPersonByIdCallWithId = id
         onCompletion(returnWithPerson!)
     }

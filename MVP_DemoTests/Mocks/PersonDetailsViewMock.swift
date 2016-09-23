@@ -6,7 +6,7 @@ class PersonDetailsViewMock : PersonDetailsView {
 
     var didDisplayWithPersonViewModel: PersonDetailsViewModel!
 
-    func display(person person: PersonDetailsViewModel) {
+    func display(person: PersonDetailsViewModel) {
         didDisplayWithPersonViewModel = person
     }
 }

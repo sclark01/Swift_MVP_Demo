@@ -1,7 +1,7 @@
 import Foundation
 
 struct PersonForListViewModel {
-    private let person: Person
+    fileprivate let person: Person
 
     init(person: Person) {
         self.person = person
