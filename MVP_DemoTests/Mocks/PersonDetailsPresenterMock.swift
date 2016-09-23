@@ -4,13 +4,18 @@ import Foundation
 
 class PersonDetailsPresenterMock : PersonDetailsPresenterType {
 
-    required init(view: PersonDetailsView, service: PeopleServiceType) {
+    let view: PersonDetailsView
 
+    var mockViewModel: PersonDetailsViewModel!
+
+    required init(view: PersonDetailsView, service: PeopleServiceType) {
+        self.view = view
     }
 
     var didGetPersonWithId: Int?
 
     func getPersonWith(id id: Int) {
         didGetPersonWithId = id
+        view.display(person: mockViewModel)
     }
 }

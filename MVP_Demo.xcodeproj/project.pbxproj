@@ -29,6 +29,8 @@
 		5874F85A1D94936400A43547 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F8591D94936400A43547 /* PersonDetailsView.swift */; };
 		5874F85C1D9493FD00A43547 /* PersonDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F85B1D9493FD00A43547 /* PersonDetailsPresenterTests.swift */; };
 		5874F85E1D94958A00A43547 /* PersonDetailsViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F85D1D94958A00A43547 /* PersonDetailsViewMock.swift */; };
+		5874F8601D94A2A500A43547 /* PersonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F85F1D94A2A500A43547 /* PersonDetailsViewModel.swift */; };
+		5874F8621D94A3AD00A43547 /* PersonDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874F8611D94A3AD00A43547 /* PersonDetailsViewModelTests.swift */; };
 		58F6F5971D78CC1700BB598F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6F5961D78CC1700BB598F /* AppDelegate.swift */; };
 		58F6F59E1D78CC1700BB598F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F6F59D1D78CC1700BB598F /* Assets.xcassets */; };
 		58F6F5A11D78CC1700BB598F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F6F59F1D78CC1700BB598F /* LaunchScreen.storyboard */; };
@@ -72,6 +74,8 @@
 		5874F8591D94936400A43547 /* PersonDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		5874F85B1D9493FD00A43547 /* PersonDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsPresenterTests.swift; sourceTree = "<group>"; };
 		5874F85D1D94958A00A43547 /* PersonDetailsViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewMock.swift; sourceTree = "<group>"; };
+		5874F85F1D94A2A500A43547 /* PersonDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModel.swift; sourceTree = "<group>"; };
+		5874F8611D94A3AD00A43547 /* PersonDetailsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		58F6F5931D78CC1700BB598F /* MVP_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F6F5961D78CC1700BB598F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F6F59D1D78CC1700BB598F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				5874F84A1D947FB400A43547 /* PersonDetailsViewController.swift */,
 				5874F8551D94905100A43547 /* PersonDetailsPresenter.swift */,
 				5874F8591D94936400A43547 /* PersonDetailsView.swift */,
+				5874F85F1D94A2A500A43547 /* PersonDetailsViewModel.swift */,
 			);
 			path = PersonDetails;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			children = (
 				5874F8531D948FDA00A43547 /* PersonDetailsViewControllerTests.swift */,
 				5874F85B1D9493FD00A43547 /* PersonDetailsPresenterTests.swift */,
+				5874F8611D94A3AD00A43547 /* PersonDetailsViewModelTests.swift */,
 			);
 			path = PersonDetailsTests;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5874F8601D94A2A500A43547 /* PersonDetailsViewModel.swift in Sources */,
 				58F6F5C61D78D3C400BB598F /* Person.swift in Sources */,
 				58F6F5C21D78D33400BB598F /* PeopleListPresenter.swift in Sources */,
 				5854937F1D7D96C1009D68BE /* PeopleTransformer.swift in Sources */,
@@ -500,6 +507,7 @@
 				5854938C1D7D96EF009D68BE /* PeopleServiceTests.swift in Sources */,
 				585493881D7D96E3009D68BE /* PeopleListPresenterTests.swift in Sources */,
 				5854938D1D7D96EF009D68BE /* PeopleTransformerTests.swift in Sources */,
+				5874F8621D94A3AD00A43547 /* PersonDetailsViewModelTests.swift in Sources */,
 				5874F85E1D94958A00A43547 /* PersonDetailsViewMock.swift in Sources */,
 				585493851D7D96D8009D68BE /* PersonTests.swift in Sources */,
 				585493831D7D96D0009D68BE /* PeopleServiceMock.swift in Sources */,

@@ -3,8 +3,19 @@ import UIKit
 class PersonDetailsViewController : UIViewController {
 
     var personDetailsPresenter: PersonDetailsPresenterType?
-
     var personId: Int?
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+
+    var viewModel: PersonDetailsViewModel? {
+        didSet {
+            nameLabel.text = viewModel?.name
+            ageLabel.text = viewModel?.age
+            phoneLabel.text = viewModel?.phone
+        }
+    }
 
     override func viewDidLoad() {
         guard let id = personId else { return }
@@ -16,7 +27,7 @@ class PersonDetailsViewController : UIViewController {
 }
 
 extension PersonDetailsViewController : PersonDetailsView {
-    func display(person person: PersonForListViewModel) {
-
+    func display(person person: PersonDetailsViewModel) {
+        viewModel = person
     }
 }

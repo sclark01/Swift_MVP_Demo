@@ -4,9 +4,9 @@ import Foundation
 
 class PersonDetailsViewMock : PersonDetailsView {
 
-    var didDisplayWithPersonViewModel: PersonForListViewModel!
+    var didDisplayWithPersonViewModel: PersonDetailsViewModel!
 
-    func display(person person: PersonForListViewModel) {
+    func display(person person: PersonDetailsViewModel) {
         didDisplayWithPersonViewModel = person
     }
 }
