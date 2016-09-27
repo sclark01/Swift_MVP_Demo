@@ -79,8 +79,8 @@ app.get('/personbyid', function(req, res) {
   var id = req.query["id"];
   res.writeHead(200, { 'Content-Type': 'application/json' });
   var person = linq.from(people)
-    .where(function(i){return i.id == id})
-    .toArray();
+    .where(function(i){return i.id == id});
+    
   res.write(JSON.stringify(person));
   res.end();
 });
